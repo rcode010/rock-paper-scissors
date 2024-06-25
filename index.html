@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCK PAPER SCISSORS</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    
+    <div class="container">
+        <p class="title">Rock Paper Scissors</p>
+        <div>
+            <button
+    class="move-button"
+    onclick="
+        userMove='rock'
+        computerMoveFun();
+        comparing();
+        display();
+        "><img class="move-icon" src="img/rock-emoji.png" alt=""></button>
+    <button class="move-button"  onclick="
+        userMove='paper'
+        computerMoveFun();
+        comparing();
+        display();
+    "><img class="move-icon" src="img/paper-emoji.png" alt=""></button>
+    <button class="move-button" onclick="
+    userMove='scissors'
+        computerMoveFun();
+        comparing();
+        display();
+    "><img class="move-icon" src="img/scissors-emoji.png" alt=""></button>
+        </div>
+    
+    <p class="result_"></p>
+    <p class="pc_moves"></p>
+    <p class="result_paragraph"></p>
+    <div class="button-container">
+        <button onclick="
+    resetScore ();
+    
+    " class="reset-button">Reset Score</button>
+
+    </div>
+    
+    </div>
+   
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
